@@ -127,7 +127,7 @@ const basketSlice = createSlice({
 });
 
 // اضافه کردن export برای basketState
-export const basketState = (state) => state.basket;
+export const basketState = (state) => state.basket; //یک سلکتور برا دسترسی به سبد خرید
 
 export const { addItem, removeItem, clearBasket } = basketSlice.actions;
 
