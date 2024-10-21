@@ -185,8 +185,8 @@ export default function Home() {
 
       {/* نمایش غذاهای محبوب */}
       <PopularFoods
-        foods={filteredFoods}
-        loadingFoods={loadingFoods}
+        foods={filteredFoods} //لیست غذاها
+        loadingFoods={loadingFoods} //وضعت لودینگ
         handleAddItem={handleAddItem}
         handleRemoveItem={handleRemoveItem}
         getItemQuantity={getItemQuantity}

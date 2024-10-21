@@ -15,7 +15,7 @@ export default function Balance() {
   }, 0);
 
   const countItems = (changes, action) => {
-    const itemMap = {};
+    const itemMap = {}; //یک شی برای ذخیره آیتم ها
     changes.forEach(change => {
       if (itemMap[change.name]) {
         itemMap[change.name].count += 1;
@@ -29,7 +29,7 @@ export default function Balance() {
   const handleApplyChanges = () => {
     const currentTime = new Date();
     const filteredChanges = changeHistory.filter(change => {
-      const changeTime = new Date(change.timestamp);
+      const changeTime = new Date(change.timestamp); //زمان ان تغییر را ذخیره میکنیم changeHistoryبرای هر تغییر در 
       return prevTime ? changeTime >= prevTime && changeTime <= currentTime : true;
     });
 
